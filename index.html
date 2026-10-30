@@ -12,17 +12,17 @@
 <body><main>
 <div class="eyebrow">CZ PRO TOOLS</div>
 <h1>Zásady ochrany osobních údajů</h1>
-<p class="muted">Reality Investor Pro · Aktualizováno: 30. 10. 2026</p>
+<p class="muted">Reality Investor Pro · Aktualizováno: 31. 10. 2026</p>
 <div class="panel"><p><strong>Stručně:</strong> Reality Investor Pro analyzuje nabídky nemovitostí na podporovaných realitních portálech a pro potřeby uživatele ukládá vybrané informace do úložiště rozšíření v prohlížeči. Předplatné PRO ověřuje prostřednictvím služby ExtensionPay, která používá platební infrastrukturu Stripe.</p></div>
 <h2>1. Provozovatel a kontakt</h2>
 <p>Produkt: <strong>Reality Investor Pro</strong><br>Značka: <strong>CZ Pro Tools</strong><br>Provozovatel / správce údajů: <strong>Yurii Dudar</strong><br>Kontakt pro ochranu údajů: <strong><a href="mailto:pro100pulser@gmail.com">pro100pulser@gmail.com</a></strong></p>
 <h2>2. Jaké údaje rozšíření zpracovává</h2>
 <p>Rozšíření běží na stránkách Sreality.cz, Bezrealitky.cz a Reality.iDNES.cz a pro svoji deklarovanou funkci čte obsah inzerátů, zejména adresu či lokalitu, typ nemovitosti, plochu, požadovanou cenu, popis, odkaz na inzerát a případně veřejně zpřístupněné jméno a telefon prodávajícího nebo makléře. Z těchto informací vypočítává cenové a investiční ukazatele.</p>
-<p>Lokálně se mohou uchovávat uložené inzeráty, sledované změny jejich cen, kontaktní informace dostupné v inzerátech, výběr nemovitostí (shortlist), uživatelem upravené hodnoty výpočtů, preference jazyka, údaje o využití denního limitu a stav ověření PRO.</p>
+<p>Lokálně se mohou uchovávat uložené inzeráty, sledované změny jejich cen, kontaktní informace dostupné v inzerátech, výběr nemovitostí (shortlist), uživatelem upravené hodnoty výpočtů, preference jazyka, údaje o využití měsíčního limitu a stav ověření PRO.</p>
 <h2>3. Účel zpracování</h2>
 <p>Údaje se používají pouze k zobrazení analýz, porovnání nabídek, správě lokální CRM databáze, exportu záznamů na vyžádání, zachování nastavení a ověření oprávnění k placeným funkcím.</p>
 <h2>4. Ukládání a sdílení</h2>
-<p>Databáze nemovitostí a uživatelské nastavení se v aktuální verzi ukládají v úložišti <code>chrome.storage.local</code> na straně prohlížeče. Z kódu této verze nevyplývá odesílání CRM databáze na vlastní server provozovatele. CSV export se vytvoří lokálně v prohlížeči na přímou žádost uživatele. Exportovaný soubor následně spravuje sám uživatel.</p>
+<p>Databáze nemovitostí a uživatelské nastavení se v aktuální verzi ukládají v úložišti <code>chrome.storage.local</code> na straně prohlížeče. Z kódu této verze nevyplývá odesílání CRM databáze na vlastní server provozovatele. CSV export (PRO) a záloha/obnovení CRM ve formátu JSON (FREE i PRO) se vytvářejí či zpracovávají lokálně v prohlížeči na přímou žádost uživatele. Exportované soubory následně spravuje sám uživatel.</p>
 <p>Informace nezbytné k ověření předplatného (např. pseudonymní licenční identifikátor a stav nákupu) zpracovává <a href="https://extensionpay.com/" rel="noopener noreferrer">ExtensionPay</a>. Jeho knihovna může používat také <code>chrome.storage.sync</code> pro údaje o licenci. Pokud uživatel zvolí placenou verzi, ExtensionPay pracuje s platebním e-mailem a platební údaje jsou zpracovávány prostřednictvím <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe</a>. Rozšíření neukládá čísla platebních karet do své lokální CRM databáze.</p>
 <p>Samotné navštívené realitní portály při svém běžném používání zpracovávají údaje podle svých vlastních zásad. Rozšíření za tyto služby neodpovídá.</p>
 <h2>5. Doba uchování a odstranění</h2>
@@ -30,7 +30,7 @@
 <h2>6. Zabezpečení a omezení</h2>
 <p>Rozšíření používá oprávnění pouze pro podporované realitní portály, platební doménu a úložiště rozšíření. Přenosy ke službě ExtensionPay probíhají přes HTTPS. Údaje uložené lokálně se řídí zabezpečením prohlížeče a zařízení uživatele.</p>
 <h2>7. Práva uživatelů</h2>
-<p>Uživatel může lokální CRM databázi vymazat a v PRO exportovat vlastní uložené záznamy. Má-li právní předpis uplatnění, může požadovat informace o zpracování osobních údajů, opravu či výmaz údajů nebo vznést námitku prostřednictvím výše uvedeného kontaktního e-mailu. Platební údaje a požadavky na jejich odstranění mohou podléhat zásadám ExtensionPay a Stripe.</p>
+<p>Uživatel může lokální CRM databázi vymazat, vytvořit či obnovit zálohu ve formátu JSON a v PRO také exportovat uložené záznamy do CSV. Má-li právní předpis uplatnění, může požadovat informace o zpracování osobních údajů, opravu či výmaz údajů nebo vznést námitku prostřednictvím výše uvedeného kontaktního e-mailu. Platební údaje a požadavky na jejich odstranění mohou podléhat zásadám ExtensionPay a Stripe.</p>
 <h2>8. Omezené použití údajů</h2>
 <p>Použití informací získaných z rozhraní Google APIs bude dodržovat zásady <a href="https://developer.chrome.com/docs/webstore/program-policies/policies" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, včetně požadavků na omezené použití (Limited Use). Údaje z inzerátů nejsou používány k cílené reklamě ani prodávány datovým zprostředkovatelům.</p>
 <h2>9. Změny těchto zásad</h2>
