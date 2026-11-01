@@ -1,39 +1,57 @@
-<!doctype html>
-<html lang="cs">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>Zásady ochrany osobních údajů — Reality Investor Pro</title>
-<style>
-:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e2e8f0;background:#0b1220;line-height:1.65}*{box-sizing:border-box}body{margin:0}main{width:min(850px,calc(100% - 36px));margin:48px auto 80px}h1,h2{line-height:1.25;color:#f8fafc}h1{font-size:clamp(27px,4vw,38px);margin-bottom:6px}h2{font-size:20px;margin-top:36px}p,li{font-size:15px}small,.muted{color:#94a3b8}.eyebrow{color:#38bdf8;font-weight:700;letter-spacing:.12em;font-size:12px}.panel{border:1px solid #334155;border-radius:16px;background:#121d30;padding:18px 22px;margin-top:24px}a{color:#7dd3fc;overflow-wrap:anywhere}strong{color:#f8fafc}.notice{border-left:3px solid #fbbf24;padding-left:14px;color:#fde68a}footer{margin-top:45px;padding-top:20px;border-top:1px solid #334155;color:#94a3b8}
-</style>
-</head>
-<body><main>
-<div class="eyebrow">CZ PRO TOOLS</div>
-<h1>Zásady ochrany osobních údajů</h1>
-<p class="muted">Reality Investor Pro · Aktualizováno: 31. 10. 2026</p>
-<div class="panel"><p><strong>Stručně:</strong> Reality Investor Pro analyzuje nabídky nemovitostí na podporovaných realitních portálech a pro potřeby uživatele ukládá vybrané informace do úložiště rozšíření v prohlížeči. Předplatné PRO ověřuje prostřednictvím služby ExtensionPay, která používá platební infrastrukturu Stripe.</p></div>
-<h2>1. Provozovatel a kontakt</h2>
-<p>Produkt: <strong>Reality Investor Pro</strong><br>Značka: <strong>CZ Pro Tools</strong><br>Provozovatel / správce údajů: <strong>Yurii Dudar</strong><br>Kontakt pro ochranu údajů: <strong><a href="mailto:pro100pulser@gmail.com">pro100pulser@gmail.com</a></strong></p>
-<h2>2. Jaké údaje rozšíření zpracovává</h2>
-<p>Rozšíření běží na stránkách Sreality.cz, Bezrealitky.cz a Reality.iDNES.cz a pro svoji deklarovanou funkci čte obsah inzerátů, zejména adresu či lokalitu, typ nemovitosti, plochu, požadovanou cenu, popis, odkaz na inzerát a případně veřejně zpřístupněné jméno a telefon prodávajícího nebo makléře. Z těchto informací vypočítává cenové a investiční ukazatele.</p>
-<p>Lokálně se mohou uchovávat uložené inzeráty, sledované změny jejich cen, kontaktní informace dostupné v inzerátech, výběr nemovitostí (shortlist), uživatelem upravené hodnoty výpočtů, preference jazyka, údaje o využití měsíčního limitu a stav ověření PRO.</p>
-<h2>3. Účel zpracování</h2>
-<p>Údaje se používají pouze k zobrazení analýz, porovnání nabídek, správě lokální CRM databáze, exportu záznamů na vyžádání, zachování nastavení a ověření oprávnění k placeným funkcím.</p>
-<h2>4. Ukládání a sdílení</h2>
-<p>Databáze nemovitostí a uživatelské nastavení se v aktuální verzi ukládají v úložišti <code>chrome.storage.local</code> na straně prohlížeče. Z kódu této verze nevyplývá odesílání CRM databáze na vlastní server provozovatele. CSV export (PRO) a záloha/obnovení CRM ve formátu JSON (FREE i PRO) se vytvářejí či zpracovávají lokálně v prohlížeči na přímou žádost uživatele. Exportované soubory následně spravuje sám uživatel.</p>
-<p>Informace nezbytné k ověření předplatného (např. pseudonymní licenční identifikátor a stav nákupu) zpracovává <a href="https://extensionpay.com/" rel="noopener noreferrer">ExtensionPay</a>. Jeho knihovna může používat také <code>chrome.storage.sync</code> pro údaje o licenci. Pokud uživatel zvolí placenou verzi, ExtensionPay pracuje s platebním e-mailem a platební údaje jsou zpracovávány prostřednictvím <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe</a>. Rozšíření neukládá čísla platebních karet do své lokální CRM databáze.</p>
-<p>Samotné navštívené realitní portály při svém běžném používání zpracovávají údaje podle svých vlastních zásad. Rozšíření za tyto služby neodpovídá.</p>
-<h2>5. Doba uchování a odstranění</h2>
-<p>Uložené inzeráty zůstávají v lokální databázi, dokud je uživatel neodstraní funkcí pro vymazání databáze, neodinstaluje rozšíření nebo nejsou odstraněna data prohlížeče. Historie změn je na úrovni jednotlivých inzerátů technicky omezena. Záznamy o předplatném uchovávané poskytovateli plateb se řídí jejich vlastními zásadami a zákonnými povinnostmi.</p>
-<h2>6. Zabezpečení a omezení</h2>
-<p>Rozšíření používá oprávnění pouze pro podporované realitní portály, platební doménu a úložiště rozšíření. Přenosy ke službě ExtensionPay probíhají přes HTTPS. Údaje uložené lokálně se řídí zabezpečením prohlížeče a zařízení uživatele.</p>
-<h2>7. Práva uživatelů</h2>
-<p>Uživatel může lokální CRM databázi vymazat, vytvořit či obnovit zálohu ve formátu JSON a v PRO také exportovat uložené záznamy do CSV. Má-li právní předpis uplatnění, může požadovat informace o zpracování osobních údajů, opravu či výmaz údajů nebo vznést námitku prostřednictvím výše uvedeného kontaktního e-mailu. Platební údaje a požadavky na jejich odstranění mohou podléhat zásadám ExtensionPay a Stripe.</p>
-<h2>8. Omezené použití údajů</h2>
-<p>Použití informací získaných z rozhraní Google APIs bude dodržovat zásady <a href="https://developer.chrome.com/docs/webstore/program-policies/policies" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, včetně požadavků na omezené použití (Limited Use). Údaje z inzerátů nejsou používány k cílené reklamě ani prodávány datovým zprostředkovatelům.</p>
-<h2>9. Změny těchto zásad</h2>
-<p>Pokud se změní způsob zpracování údajů nebo funkce rozšíření, aktualizujeme tento dokument a datum poslední aktualizace. Podstatné změny musí být transparentně uvedeny uživatelům.</p>
-<footer>© 2026 CZ Pro Tools · Reality Investor Pro</footer>
-</main></body></html>
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="Zásady ochrany osobních údajů pro rozšíření Reality Investor Pro: přihlášení Google, místní CRM, Cloudflare a předplatné ExtensionPay."><title>Ochrana osobních údajů — Reality Investor Pro</title><style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-synthesis:none;line-height:1.7;background:#081121;color:#d9e4f1}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 90% 2%,#0b3040 0,#081121 36%)}
+main{max-width:890px;margin:0 auto;padding:48px 22px 90px}header{display:flex;align-items:center;gap:14px;margin:0 0 25px;padding-bottom:20px;border-bottom:1px solid #294056}
+.brand{display:grid;place-items:center;width:42px;height:42px;border:1px solid #2b6172;border-radius:12px;background:#112c35;font-size:23px}
+header strong{font-size:18px;color:#fff}header small{display:block;color:#95aabd;font-size:12px}
+article{background:#101d32;border:1px solid #27405a;border-radius:18px;padding:32px 38px;box-shadow:0 15px 55px #0004}
+h1,h2,h3{color:#fff;line-height:1.25}h1{font-size:clamp(26px,4.5vw,34px);margin:0 0 20px}h2{font-size:21px;padding-top:21px;border-top:1px solid #294056;margin:36px 0 15px}h3{font-size:17px;margin:25px 0 12px;color:#82d9e8}
+p{margin:12px 0}ul{padding-left:23px}li{margin:8px 0}a{color:#79cfff;text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}code{background:#243450;padding:2px 5px;border-radius:4px;color:#d1eaff}strong{color:#f1f8ff}
+footer{margin-top:25px;color:#95aabd;font-size:13px;text-align:center}
+@media(max-width:640px){main{padding:24px 12px 45px}article{padding:24px 18px}h2{font-size:19px}}
+</style></head><body><main><header><span class="brand" aria-hidden="true">🏠</span><div><strong>Reality Investor Pro</strong><small>Ochrana osobních údajů</small></div></header><article><h1>Ochrana osobních údajů — Reality Investor Pro</h1>
+<p><em>Aktualizováno: 1. listopadu 2026</em></p>
+<h2>1. Kdo službu provozuje</h2>
+<p>Správcem osobních údajů souvisejících s rozšířením <strong>Reality Investor Pro – Analýza nemovitostí</strong> je <strong>Yurii Dudar</strong>, vystupující pod značkou <strong>CZ Pro Tools</strong>. Kontakt pro dotazy k ochraně osobních údajů a žádosti o uplatnění práv: <strong><a href="mailto:pro100pulser@gmail.com">pro100pulser@gmail.com</a></strong>.</p>
+<p>Rozšíření pomáhá orientačně analyzovat nabídky nemovitostí na <strong>Sreality.cz</strong>, <strong>Bezrealitky.cz</strong> a <strong>Reality.iDNES.cz</strong>. Výpočty, statistické odhady a modelové předpoklady nepředstavují ověřené ocenění nemovitosti ani záruku investičního výnosu.</p>
+<h2>2. Jaké údaje zpracováváme</h2>
+<h3>Údaje uchovávané v prohlížeči</h3>
+<p>V úložišti rozšíření (<code>chrome.storage.local</code>) mohou být uloženy údaje o inzerátech, například název, adresa URL, cena, plocha, historie pozorovaných cen a veřejně dostupné kontaktní údaje prodávajícího, dále záznamy místní investorské CRM, shortlist, uživatelem zadané parametry výpočtů, nastavení jazyka a mezipaměť stavu předplatného. Údaje slouží k zobrazení funkcí rozšíření, výpočtům a ukládání uživatelské práce.</p>
+<p>Ceny, plochy, poznámky, telefonní čísla ani celé texty stránek nejsou odesílány do serverového API pro kontrolu bezplatného limitu. Ručně exportované soubory CSV/JSON mohou obsahovat záznamy CRM a kontakty; jejich další uložení a odstranění ovládá uživatel.</p>
+<h3>Přihlášení přes Google</h3>
+<p>Pro přihlášení používáme Google OpenID Connect v rozsahu <code>openid</code>. Google ověřuje účet a náš server při přihlášení přechodně zpracuje ověřený identifikátor uživatele (<code>sub</code>). Do databáze ukládáme odvozený identifikátor vypočtený pomocí HMAC, nikoli původní <code>sub</code>. Neuchováváme jméno ani e-mail z Google přihlášení a neukládáme Google access, refresh ani ID tokeny.</p>
+<p>Tento odvozený identifikátor není anonymní: umožňuje spojit opakovaná přihlášení téhož účtu. Používá se pro společný limit <strong>10 různých detailních analýz za kalendářní měsíc v časovém pásmu Europe/Prague</strong>, a to i po přeinstalaci nebo na jiném zařízení. Základní náhled nabídky je dostupný i bez přihlášení.</p>
+<h3>Serverové údaje a zabezpečení</h3>
+<p>Služba využívá <strong>Cloudflare Workers</strong> a databázi <strong>Cloudflare D1</strong>. Server pro poskytování limitu ukládá odvozený identifikátor účtu, technický identifikátor konkrétního inzerátu spolu s označením realitního portálu, příslušný měsíc a čas použití analýzy. Identifikátor inzerátu může umožňovat zpětně dohledat nabídku; nejde proto o anonymní statistiku.</p>
+<p>Pro přihlášení se používá náhodný token relace, který je na zařízení uložen pouze v <code>chrome.storage.session</code> a je vymazán při ukončení relace prohlížeče nebo odhlášení. Na serveru se uchovává pouze <strong>SHA-256 hash</strong> tokenu a doba jeho platnosti, nejvýše <strong>7 dnů</strong>. Při žádosti o výmaz se může uložit reference žádosti, identifikátor účtu a čas vytvoření žádosti.</p>
+<p>Cloudflare při zajištění provozu a ochrany služby zpracovává technické síťové údaje, včetně IP adresy. Aplikace IP adresy neukládá do D1; pro omezení nadměrného počtu požadavků používá přechodný hash IP adresy. Provozní a bezpečnostní záznamy poskytovatele se řídí jeho vlastními nastaveními a podmínkami a mohou obsahovat metadata požadavků včetně URL.</p>
+<h3>Předplatné PRO</h3>
+<p>Platby a správu předplatného PRO zajišťuje služba <strong>ExtensionPay</strong> ve spojení se <strong>Stripe</strong>. Při platbě nebo přihlášení k platební službě mohou tito poskytovatelé zpracovávat e-mail, identifikační a platební údaje podle svých podmínek a zásad ochrany soukromí. Rozšíření získává a používá informaci o stavu předplatného k odemčení funkcí PRO. Naše API pro bezplatný limit nepřijímá čísla platebních karet ani soukromé Stripe klíče. Google účet používaný pro limit není automaticky propojen s e-mailem používaným u ExtensionPay.</p>
+<h2>3. Účely a právní základy zpracování</h2>
+<p>Údaje nezbytné pro fungování požadovaných funkcí, přihlášení a vedení limitu zpracováváme za účelem poskytování služby (čl. 6 odst. 1 písm. b GDPR). Nezbytné technické údaje používané k zabezpečení a ochraně před zneužitím zpracováváme na základě oprávněného zájmu na bezpečném provozu služby (čl. 6 odst. 1 písm. f GDPR). Při posuzování oprávněného zájmu zohledňujeme přiměřenost rozsahu uchovávaných údajů.</p>
+<p>Údaje uživatelů <strong>neprodáváme</strong>, nepoužíváme k reklamnímu profilování ani k personalizované reklamě.</p>
+<p>Používání informací získaných z Google API bude v souladu s <a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>, včetně požadavků <strong>Limited Use</strong>. Přístup k údajům a jejich předání omezujeme na účely funkcí rozšíření, zabezpečení, plateb, splnění právních povinností nebo vyřízení oprávněné žádosti uživatele.</p>
+<h2>4. Kdo se může na zpracování podílet</h2>
+<p>Při poskytování služby spolupracujeme s těmito poskytovateli:</p>
+<ul>
+<li><strong>Google</strong> — ověření uživatele při přihlášení.</li>
+<li><strong>Cloudflare</strong> — provoz serverového API, databáze, infrastruktura a zabezpečení.</li>
+<li><strong>ExtensionPay a Stripe</strong> — zajištění předplatného a plateb.</li>
+</ul>
+<p>Někteří poskytovatelé mohou zpracovávat údaje i mimo Evropský hospodářský prostor. Podmínky mezinárodních přenosů a příslušná ochranná opatření vyplývají z dokumentace a smluvních podmínek konkrétního poskytovatele. Dotazy k použitým poskytovatelům lze zaslat na výše uvedený kontakt.</p>
+<h2>5. Doba uchování</h2>
+<ul>
+<li><strong>Místní CRM, shortlist a nastavení:</strong> do odstranění uživatelem nebo smazání údajů rozšíření.</li>
+<li><strong>Exportované CSV/JSON soubory:</strong> podle rozhodnutí uživatele; služba je automaticky nemaže z jeho zařízení.</li>
+<li><strong>Přihlašovací token v prohlížeči:</strong> do ukončení relace prohlížeče, vymazání relace nebo odhlášení.</li>
+<li><strong>Serverový hash přihlašovací relace:</strong> použitelnost nejvýše 7 dnů; expirované záznamy se odstraňují pravidelnou serverovou úlohou.</li>
+<li><strong>Záznamy využití bezplatného limitu (<code>analysis_claims</code>) a reference žádostí o výmaz (<code>deletion_requests</code>):</strong> běžně nejvýše 90 dnů; starší záznamy odstraňuje denní serverová úloha. Při technické poruše může dojít ke zpoždění odstranění.</li>
+</ul>
+<p>Odhlášení ruší aktuální relaci na serveru, pokud je dostupný; při výpadku se token odstraní lokálně a serverová relace později vyprší. Přeinstalace rozšíření, změna zařízení ani odstranění místního CRM sama o sobě nevymaže záznamy serverového měsíčního limitu. Uchovávání provozních záznamů a případných záloh poskytovatelů se může řídit odlišnými lhůtami podle jejich podmínek.</p>
+<h2>6. Jak můžete požádat o přístup nebo výmaz</h2>
+<p>Chcete-li požádat o odstranění serverových údajů, přihlaste se v rozšíření pomocí Google, použijte funkci žádosti o smazání serverových dat a odešlete zobrazenou referenci na <strong><a href="mailto:pro100pulser@gmail.com">pro100pulser@gmail.com</a></strong>. Tato reference slouží k ověření, že žádost vznikla v přihlášené relaci. Žádost následně zpracováváme ručně; odeslání reference samo o sobě neznamená okamžitý výmaz.</p>
+<p>Nemůžete-li se přihlásit, napište nám na uvedený e-mail; domluvíme přiměřený způsob ověření identity. Neposílejte hesla, přihlašovací tokeny ani údaje platebních karet. Odstranění údajů spravovaných samostatně poskytovateli ExtensionPay a Stripe se řídí jejich procesy a případnými zákonnými povinnostmi uchování.</p>
+<p>Podle okolností máte právo požádat o přístup k osobním údajům, jejich opravu, výmaz, omezení zpracování nebo přenositelnost a vznést námitku proti zpracování založenému na oprávněném zájmu. Žádosti vyřizujeme v zákonných lhůtách. Můžete také podat stížnost u <strong>Úřadu pro ochranu osobních údajů (ÚOOÚ)</strong>.</p>
+<h2>7. Změny těchto zásad</h2>
+<p>Pokud se změní způsob zpracování údajů, tyto zásady aktualizujeme. Podstatné změny zpracování údajů oznámíme způsobem odpovídajícím jejich povaze a požadavkům platných předpisů a pravidel Chrome Web Store.</p>
+</article><footer>Reality Investor Pro • CZ Pro Tools</footer></main></body></html>
